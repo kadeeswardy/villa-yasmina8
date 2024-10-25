@@ -18,12 +18,12 @@ const SingleVilla = () => {
             </div>
             <div className="otherImgs">
               <div>
-                <img src={"/public/villa-11.JPG"} alt="villa" />
+                <img src={"/villa-11.JPG"} alt="villa" />
                 <img src={"/public/villa-12.JPG"} alt="villa" />
               </div>
               <div>
-                <img src={"/public/villa-13.JPG"} alt="villa" />
-                <img src={"/public/villa-14.JPG"} alt="villa" />
+                <img src={"/villa-13.JPG"} alt="villa" />
+                <img src={"/villa-14.JPG"} alt="villa" />
               </div>
             </div>
           </div>

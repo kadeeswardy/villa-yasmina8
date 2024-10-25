@@ -37,10 +37,10 @@ const About = () => {
         </div>
         <div className="second_container">
           <div className="image_1">
-            <img src="/public/villa-14.JPG" alt="people" />
+            <img src="/villa-14.JPG" alt="people" />
           </div>
           <div className="image_2">
-            <img src="/public/villa-12.JPG" alt="people2" />
+            <img src="/villa-12.JPG" alt="people2" />
           </div>
         </div>
       </section>

@@ -10,7 +10,7 @@ const Contact = () => {
        
         <div className="container">
       
-       <img src="/public/villa-16.JPG" alt="about" />
+       <img src="/villa-16.JPG" alt="about" />
        
           <div className="content">
               <h3>Let's connect</h3>
