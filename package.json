@@ -2,11 +2,13 @@
   "name": "project",
   "private": true,
   "version": "0.0.0",
-   "homepage": "https://github.com/kadeeswardy/Villa-Yasmina2.git",
+  "homepage": "https://github.com/kadeeswardy/Villa-Yasmina2",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "predeploy": "npm run build",
+ "deploy": "gh-pages -d build",
     "preview": "vite preview",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
