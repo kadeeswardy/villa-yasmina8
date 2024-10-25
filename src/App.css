@@ -469,7 +469,7 @@ h5 {
 /****************************************CONTACT MINI STYLING*************************************************/
 #contact_Mini {
   height: 500px;
-  background: url(/public/villa-9.JPG);
+  background: url(/dist/villa-9.JPG);
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
