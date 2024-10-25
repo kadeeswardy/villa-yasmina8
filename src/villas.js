@@ -5,7 +5,7 @@ export const villas = [
     name: "Villa Yasmina",
     location: "EL GOUNA",
     bedrooms: 2,
-    image: "/dist/villa-1.JPG",
+    image: "/public/villa-1.JPG",
     
   },
   {
@@ -15,7 +15,7 @@ export const villas = [
  
     bedrooms: 2,
     rating: 4.4,
-    image: "/dist/villa-5.JPG",
+    image: "/public/villa-5.JPG",
   
   },
   {
@@ -24,62 +24,62 @@ export const villas = [
     location: "EL GOUNA",
     bedrooms: 1,
     rating: 4.9,
-    image: "/dist/villa-3.JPG",
+    image: "/public/villa-3.JPG",
     dailyRent: "200",
   },
   {
     id: 4,
     name: "Villa Yasmina",
     location: "EL GOUNA",
-    image: "/dist/villa-2.JPG",
+    image: "/public/villa-2.JPG",
   },
   {
     id: 5,
     name: "Villa Yasmina",
     location: "EL GOUNA",
-    image: "/dist/villa-4.JPG",
+    image: "/public/villa-4.JPG",
   },
   {
     id: 6,
     name: "Villa Yasmina",
     location: "EL GOUNA",
-    image: "/dist/villa-6.JPG"
+    image: "/public/villa-6.JPG"
   },
   {
     id: 7,
     name: "Villa Yasmina",
     location: "EL GOUNA",
-    image: "/dist/villa-7.JPG"
+    image: "/public/villa-7.JPG"
   },
   {
     id: 8,
     name: "Villa Yasmina",
     location: "EL GOUNA",
-    image: "/dist/villa-8.JPG"
+    image: "/public/villa-8.JPG"
   },
   {
     id: 9,
     name: "Villa Yasmina",
     location: "EL GOUNA",
-    image: "/dist/villa-9.JPG"
+    image: "/public/villa-9.JPG"
   },
   {
     id: 10,
     name: "Villa Yasmina",
     location: "EL GOUNA",
-    image: "/dist/villa-10.JPG"
+    image: "/public/villa-10.JPG"
   },
   {
     id: 11,
     name: "Villa Yasmina",
     location: "EL GOUNA",
-    image: "/dist/villa-11.JPG"
+    image: "/public/villa-11.JPG"
   },
   {
     id: 12,
     name: "Villa Yasmina",
     location: "EL GOUNA",
-    image: "/dist/villa-12.JPG"
+    image: "/public/villa-12.JPG"
   },
   {
     id: 13,
