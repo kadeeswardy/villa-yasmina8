@@ -24,7 +24,7 @@ const SubContact = () => {
         </div>
         
         <div className="container_2">
-        <img src="/public/villa-2.JPG" alt="about" />
+        <img src="/dist/villa-4.JPG" alt="about" />
         </div>
         </div>
       </section>

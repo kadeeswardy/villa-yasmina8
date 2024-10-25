@@ -163,7 +163,7 @@ h5 {
 /****************************HERO SECTION STYLING*********************************/
 #hero {
   min-height: 100vh;
-  background: url(/public/villa-1.jpg);
+  background: url(/dist/villa-1.JPG);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -176,6 +176,7 @@ h5 {
   gap: 20px;
   padding: 100px 0;
 }
+
 
 @media (max-width: 620px) {
   #hero {
@@ -192,7 +193,7 @@ h5 {
   max-width: 1500px;
   min-width: 1500px;
 }
-#topVillas h1 {
+#topVillas h1{
   font-size: 45px;
   margin-bottom: 10px;
 }
@@ -519,7 +520,7 @@ h5 {
 #contact_Mini .super_container .container_1 div p:first-child {
   width: 120px !important;
 }
-.img-content {
+.img-content{
   width: 50px;
 }
 
@@ -532,11 +533,11 @@ h5 {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
+  
   height: 380px;
-  width: 100px !important;
+width:100px !important; 
 }
-#contact_Mini .super_container .container_2 img {
+#contact_Mini .super_container .container_2 img{
   width: 100%;
 }
 #contact_Mini .super_container .container_2 form div {
@@ -644,7 +645,7 @@ h5 {
 
 /***********************************FOOTER STYLING**************************************************/
 .otherPage_footer {
-  background: #11111143;
+  background: #11111190;
   padding: 50px 20px 50px 20px;
   display: flex;
   justify-content: center;
@@ -837,7 +838,7 @@ h5 {
   text-align: start;
 }
 @media (max-width: 1520px) {
-  #aboutPage {
+  #aboutPage{
     padding: 150px 20px 30px 20px;
   }
   #aboutPage .container {
@@ -866,7 +867,7 @@ h5 {
   gap: 15px;
   background: linear-gradient(176deg, #6868688c, transparent);
 }
-#contact .container {
+#contact .container{
   display: flex;
   border-bottom-left-radius: 50px;
   border-top-right-radius: 50px;
@@ -875,11 +876,11 @@ h5 {
   background: #fff;
   margin-top: 60px;
 }
-#contact .container img {
+#contact .container img{
   height: auto;
   flex: 4;
 }
-#contact .container .content {
+#contact .container .content{
   display: flex;
   gap: 20px;
   flex-direction: column;
@@ -887,48 +888,48 @@ h5 {
   padding: 30px;
   justify-content: center;
 }
-#contact .container .content h3 {
+#contact .container .content h3{
   text-align: start;
 }
-#contact .container .content div {
+#contact .container .content div{
   display: flex;
   align-items: center;
 }
-#contact .container .content div p {
+#contact .container .content div p{
   width: 120px;
 }
-#contact .container .content ul {
+#contact .container .content ul{
   display: flex;
   gap: 15px;
   color: #181d24;
 }
-#contact .container .content ul a {
+#contact .container .content ul a{
   text-decoration: none;
   color: #181d24;
 }
-#contact .container .content ul a svg {
+#contact .container .content ul a svg{
   font-size: 25px;
 }
-@media (max-width: 1520px) {
-  #contact .container {
+@media(max-width:1520px){
+  #contact .container{
     min-width: 100%;
     width: 100%;
   }
 }
-@media (max-width: 912px) {
-  #contact .container {
+@media(max-width:912px){
+  #contact .container{
     flex-direction: column;
   }
 }
 
 /*****************TERMS AND CONDITIONS PAGE STYLING**********************************/
-#termsandcond {
+#termsandcond{
   padding: 150px 20px 30px 20px;
   min-width: 1500px;
   max-width: 1500px;
   margin: 0 auto;
 }
-#termsandcond header {
+#termsandcond header{
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -936,20 +937,20 @@ h5 {
   text-align: center;
   margin-bottom: 50px;
 }
-#termsandcond P {
+#termsandcond P{
   margin-bottom: 20px;
 }
-#termsandcond h5 {
+#termsandcond h5{
   text-align: start;
   margin-bottom: 10px;
 }
-#termsandcond .content {
+#termsandcond .content{
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
-@media (max-width: 1520px) {
-  #termsandcond {
+@media(max-width: 1520px){
+  #termsandcond{
     min-width: 100%;
     width: 100%;
   }
