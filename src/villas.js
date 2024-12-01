@@ -2,16 +2,16 @@
 export const villas = [
   {
     id: 1,
-    name: "Villa Yasmina",
-    location: "EL GOUNA",
+    name: "ROOMS",
+  
     bedrooms: 2,
     image: "/villa-1.JPG",
     
   },
   {
     id: 2,
-  name: "Villa Yasmina",
-    location: "EL GOUNA",
+  name: "Description",
+   
  
     bedrooms: 2,
     rating: 4.4,
@@ -20,10 +20,8 @@ export const villas = [
   },
   {
     id: 3,
-    name: "Villa Yasmina",
-    location: "EL GOUNA",
-    bedrooms: 1,
-    rating: 4.9,
+    name: "Location",
+  
     image: "/villa-3.JPG",
     dailyRent: "200",
   },

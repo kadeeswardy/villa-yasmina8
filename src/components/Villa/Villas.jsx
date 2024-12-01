@@ -1,40 +1,52 @@
-import React from 'react'
-import { Helmet } from 'react-helmet';
-import {villas} from '../../villas';
-import { RxDot } from "react-icons/rx";
-import { IoIosPeople } from "react-icons/io";
-import { FaBed } from "react-icons/fa";
-import { BiArea } from "react-icons/bi";
+import React, { useState } from "react";
+import { villas } from '../../villas';
 import { Link } from 'react-router-dom';
 
 const Villas = () => {
-  return (
-    <>
-        <div className="page" id='allVillas'>
-          <h1> VILLA</h1>
-          <p>{villas.length} Properties</p>
-          <div className="villasContainer">
-        {villas.map((element) => {
-          return (
-              <Link to={`/villa/${element.id}`} className="card" key={element.id}>
-                <img src={element.image} alt={element.name} />
-                <div className="location_text">
-                  <span>{element.location}</span>
-                  <span>
-                    <RxDot />
-                  </span>
-                  <span>{element.category}</span>
-                </div>
-                <div className="title_text">{element.name}</div>
-               
-               
-              </Link>
-          );
-        })}
-      </div>
-        </div>
-    </>
-  )
-}
+  const [currentImage, setCurrentImage] = useState(villas[0].image);
 
-export default Villas
+  const handleThumbnailClick = (image) => {
+    setCurrentImage(image);
+  };
+
+  return (
+    <div className="page" id="allVillas">
+      <h1>VILLA</h1>
+      <p>{villas.length} Photos</p>
+
+      <div className="gallery-container">
+        {/* الصورة الرئيسية في المنتصف */}
+        <MainImage currentImage={currentImage} />
+
+        {/* الصور الجانبية على اليمين */}
+        <Thumbnails villas={villas} onThumbnailClick={handleThumbnailClick} />
+      </div>
+    </div>
+  );
+};
+
+// مكون للصورة الرئيسية
+const MainImage = React.memo(({ currentImage }) => (
+  <div className="main-image">
+    <img src={currentImage} alt="Main Villa" className="current-image" />
+  </div>
+));
+
+// مكون للصور المصغرة
+const Thumbnails = React.memo(({ villas, onThumbnailClick }) => (
+  <div className="thumbnails">
+    {villas.map((villa) => (
+      <div className="thumbnail-container" key={villa.id}>
+        <img
+          src={villa.image}
+          alt={villa.name}
+          className="thumbnail"
+          onClick={() => onThumbnailClick(villa.image)}
+          loading="lazy"  // تحسين التحميل باستخدام lazy loading
+        />
+      </div>
+    ))}
+  </div>
+));
+
+export default Villas;

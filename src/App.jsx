@@ -1,37 +1,38 @@
-import React from 'react'
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import React, { Suspense } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import WhatsAppIcon from './components/WhatsAppIcon';
-import Home from './components/Home/Home';
-import AboutUs from './components/AboutUs/AboutUs';
-import Contact from './components/Contact/Contact';
-import Villas from './components/Villa/Villas';
-import SingleVilla from './components/Villa/SingleVilla';
-import TermsAndConditions from './components/TermsAndConditions/TermsAndConditions';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
-import './App.css'
+import './App.css';
+
+// التحميل الديناميكي للمكونات
+const Home = React.lazy(() => import('./components/Home/Home'));
+const AboutUs = React.lazy(() => import('./components/AboutUs/AboutUs'));
+const Contact = React.lazy(() => import('./components/Contact/Contact'));
+const Villas = React.lazy(() => import('./components/Villa/Villas'));
+const SingleVilla = React.lazy(() => import('./components/Villa/SingleVilla'));
 
 const App = () => {
   return (
     <>
       <div>
-            {/* مكونات أخرى */}
-            <WhatsAppIcon />
-        </div>
+        <WhatsAppIcon />
+      </div>
       <Router>
-        <Navbar/>
-        <Routes>
-          <Route path='/' element={<Home/>}/>
-          <Route path='/aboutus' element={<AboutUs/>}/>
-          <Route path='/contact' element={<Contact/>}/>
-          <Route path='/termsandconditions' element={<TermsAndConditions/>}/>
-          <Route path='/villas' element={<Villas/>}/>
-          <Route path='/villa/:id' element={<SingleVilla/>}/>
-        </Routes>
-        <Footer/>
+        <Navbar />
+        <Suspense fallback={<div>Loading...</div>}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/aboutus" element={<AboutUs />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/villas" element={<Villas />} />
+            <Route path="/villa/:id" element={<SingleVilla />} />
+          </Routes>
+        </Suspense>
+        <Footer />
       </Router>
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;

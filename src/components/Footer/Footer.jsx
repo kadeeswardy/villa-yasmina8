@@ -17,9 +17,7 @@ const Footer = () => {
             <li>
               <Link to={"/"}>Home</Link>
             </li>
-            <li>
-              <Link to={"/termsandconditions"}>Terms&Conditions</Link>
-            </li>
+         
             <li>
               <Link to={"/"}>Contact</Link>
             </li>
@@ -27,8 +25,8 @@ const Footer = () => {
         </div>
         <div className="container">
           <h4>Connect with us</h4>
-          <p>+49 172 7223515</p>
-          <p>peter-hans.wagner@dvag.de</p>
+          <span>+20 12 73177997</span>
+          <span>villa.yasmina.elgouna@gmail.com</span>
           <p>© All Rights Reserved By Kadees Wardy.</p>
         </div>
       </footer>

@@ -13,3 +13,36 @@
 .whatsapp-icon:hover {
     background-color: #128C7E; 
 }
+/* WhatsAppIcon.css */
+
+/* تحديد الأيقونة بشكل دقيق */
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px; /* المسافة من الأسفل */
+    right: 20px;  /* المسافة من اليمين */
+    background-color: #25d366; /* اللون الأساسي للأيقونة */
+    border-radius: 50%; /* جعل الأيقونة دائرية */
+    padding: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* إضافة تأثير الظل */
+    z-index: 1000; /* التأكد من أنها في الواجهة الأمامية */
+    transition: all 0.3s ease-in-out; /* تأثير عند التفاعل */
+  }
+  
+  .whatsapp-icon:hover {
+    transform: scale(1.1); /* تكبير الأيقونة عند المرور عليها */
+  }
+  
+  /* التأكد من أن الأيقونة تتكيف مع الشاشات الصغيرة */
+  @media (max-width: 768px) {
+    .whatsapp-icon {
+      bottom: 10px;
+      right: 10px;
+      padding: 8px;
+    }
+  }
+  
+  .current-image {
+    width: 100%;
+    height: auto;
+  }
+  
