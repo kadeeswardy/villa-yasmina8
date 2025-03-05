@@ -28,13 +28,13 @@ const Villas = () => {
 // مكون للصورة الرئيسية
 const MainImage = React.memo(({ currentImage }) => (
   <div className="main-image">
-    <img src={currentImage} alt="Main Villa" className="current-image" />
+    <img src={currentImage} alt="Main Villa" className="current-image" loading="lazy" />
   </div>
 ));
 
 // مكون للصور المصغرة
 const Thumbnails = React.memo(({ villas, onThumbnailClick }) => (
-  <div className="thumbnails">
+  <div className="thumbnails-grid">
     {villas.map((villa) => (
       <div className="thumbnail-container" key={villa.id}>
         <img

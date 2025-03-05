@@ -4,8 +4,6 @@ import WhatsAppIcon from './components/WhatsAppIcon';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 import './App.css';
-
-// التحميل الديناميكي للمكونات
 const Home = React.lazy(() => import('./components/Home/Home'));
 const AboutUs = React.lazy(() => import('./components/AboutUs/AboutUs'));
 const Contact = React.lazy(() => import('./components/Contact/Contact'));
