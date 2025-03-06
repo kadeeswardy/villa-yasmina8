@@ -176,6 +176,15 @@ h5 {
   padding: 100px 0;
 }
 
+/* تصغير الخلفية على الموبايل */
+@media (max-width: 768px) {
+  #hero {
+    min-height: 70vh; /* تقليل الارتفاع */
+    background-size: contain; /* جعل الخلفية تظهر بالكامل بدون قص */
+    padding: 50px 0; /* تقليل التباعد */
+  }
+}
+
 /* استجابة للهواتف */
 @media (max-width: 768px) {
   #hero {
