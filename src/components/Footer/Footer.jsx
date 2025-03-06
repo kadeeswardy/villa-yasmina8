@@ -27,7 +27,7 @@ const Footer = () => {
           <h4>Connect with us</h4>
           <span>+20 12 73177997</span>
           <span>villa.yasmina.elgouna@gmail.com</span>
-          <p>© All Rights Reserved By Kadees Wardy.</p>
+
         </div>
       </footer>
     </>

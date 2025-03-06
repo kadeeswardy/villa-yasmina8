@@ -52,6 +52,23 @@ const SingleVilla = () => {
                 </div>
               </div>
             )}
+
+            {/* 🔹 النصوص الجديدة */}
+            <div className="villa-description">
+              <h2>Villa Yasmina Overview</h2>
+              <p>
+                The "Villa Yasmina" has 3 spacious and tastefully furnished bedrooms with their own wardrobes and chests of drawers.
+                The single beds in the bedrooms can be pushed together to form a double bed.
+                In addition to the two bathrooms with toilet/shower, there is a guest toilet.
+              </p>
+              <p>
+                The spacious and elegant living room has an almost 8m high dome and invites you to linger with its comfortable couch
+                and the large flat-screen TV (channels of all languages). The kitchen has all the necessary crockery and cooking utensils.
+              </p>
+              <p>
+                You are welcome to use our WiFi unlimitedly.
+              </p>
+            </div>
           </div>
         )}
 
