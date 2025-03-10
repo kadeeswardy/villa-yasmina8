@@ -28,74 +28,67 @@ const SingleVilla = () => {
     <section id="singleVilla" className="page">
       <div className="container">
         <h3>{filteredVilla.name}</h3>
-
         {numericId === 1 && (
   <div className="villa-details">
+    {/* 🔹 مقدمة عن الفيلا */}
+    <div className="villa-intro">
+     
+      <p>
+        The "Villa Yasmina" has 3 spacious and tastefully furnished bedrooms with their own wardrobes and chests of drawers. 
+        The single beds in the bedrooms can be pushed together to form a double bed. 
+        In addition to the two bathrooms with toilet/shower, there is a guest toilet. 
+        The spacious and elegant living room has an almost 8m high dome and invites you to linger with its comfortable couch 
+        and the large flat-screen TV (channels of all languages). 
+        The kitchen has all the necessary crockery and cooking utensils. 
+        You are welcome to use our WiFi unlimitedly.
+      </p>
+    </div>
+
     {/* 🔹 الصور بتنسيق احترافي */}
     <div className="images-container">
       <div className="grid-images">
         {/* الصف الأول: 5 صور */}
         <div className="image-with-caption">
           <img src="/villa-14.JPG" alt="villa" onClick={() => openModal("/villa-14.JPG")} />
-          <p className="image-caption">
-            Master bedroom (Kingsize double bed)
-          </p>
+          <p className="image-caption">Master bedroom (Kingsize double bed)</p>
         </div>
         <div className="image-with-caption">
           <img src="/villa-13.JPG" alt="villa" onClick={() => openModal("/villa-13.JPG")} />
-          <p className="image-caption">
-                    Master bedroom (Kingsize double bed)
-          </p>
+          <p className="image-caption">Master bedroom (Kingsize double bed)</p>
         </div>
         <div className="image-with-caption">
           <img src="/12.JPG" alt="villa" onClick={() => openModal("/12.JPG")} />
-          <p className="image-caption">
-          2nd bedroom (single beds or double bed)
-          </p>
+          <p className="image-caption">2nd bedroom (single beds or double bed)</p>
         </div>
         <div className="image-with-caption">
           <img src="/villa.jpg" alt="villa" onClick={() => openModal("/villa.jpg")} />
-          <p className="image-caption">
-          2nd bedroom (single beds or double bed)
-          </p>
+          <p className="image-caption">2nd bedroom (single beds or double bed)</p>
         </div>
         <div className="image-with-caption">
           <img src="/13.JPG" alt="villa" onClick={() => openModal("/13.JPG")} />
-          <p className="image-caption">
-          3rd bedroom (single beds or double bed)
-          </p>
+          <p className="image-caption">3rd bedroom (single beds or double bed)</p>
         </div>
 
         {/* الصف الثاني: 5 صور */}
         <div className="image-with-caption">
           <img src="/villa-15.JPG" alt="villa" onClick={() => openModal("/villa-15.JPG")} />
-          <p className="image-caption">
-          3rd bedroom (single beds or double bed)
-          </p>
+          <p className="image-caption">3rd bedroom (single beds or double bed)</p>
         </div>
         <div className="image-with-caption">
           <img src="/villa-9.JPG" alt="villa" onClick={() => openModal("/villa-9.JPG")} />
-          <p className="image-caption">
-            Enjoy a large flat-screen TV (channels of all languages) and unlimited WiFi.
-          </p>
+          <p className="image-caption">Enjoy a large flat-screen TV (channels of all languages) and unlimited WiFi.</p>
         </div>
         <div className="image-with-caption">
           <img src="/villa-10.JPG" alt="villa" onClick={() => openModal("/villa-10.JPG")} />
-          <p className="image-caption">
-            Living room with 8m high dome
-          </p>
+          <p className="image-caption">Living room with 8m high dome</p>
         </div>
         <div className="image-with-caption">
           <img src="/villa-8.JPG" alt="villa" onClick={() => openModal("/villa-8.JPG")} />
-          <p className="image-caption">
-          Bathroom
-          </p>
+          <p className="image-caption">Bathroom</p>
         </div>
         <div className="image-with-caption">
           <img src="/villa-12.JPG" alt="villa" onClick={() => openModal("/villa-12.JPG")} />
-          <p className="image-caption">
-          kitchen
-          </p>
+          <p className="image-caption">Kitchen</p>
         </div>
       </div>
     </div>

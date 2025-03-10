@@ -1808,4 +1808,11 @@ width:300px !important;
   font-size: 30px;
   color: #fff;
   cursor: pointer;
+}.villa-intro p {
+  font-size: 18px;
+  font-family: 'Arial', sans-serif;
+  color: #555;
+  line-height: 1.6;
+  max-width: 800px; /* تحديد عرض النص عشان ما يبقاش طويل زيادة */
+  margin: 0 auto;
 }
