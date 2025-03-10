@@ -702,7 +702,7 @@ h5 {
 
 /****************************************CONTACT MINI STYLING*************************************************/
 #contact_Mini {
-  height: 500px;
+  height: 800px;
   background: url(/public/villa-9.JPG);
   background-position: bottom;
   background-size: cover;
@@ -713,7 +713,7 @@ h5 {
 }
 #contact_Mini .super_container {
   display: flex;
-  max-width: 1500px;
+  max-width: 100px;
   min-width: 10px;
   gap: 40px;
   transform: translateY(240px);
@@ -752,7 +752,7 @@ h5 {
   align-items: center;
 }
 #contact_Mini .super_container .container_1 div p:first-child {
-  width: 120px !important;
+  width: 180px !important;
 }
 .img-content{
   width: 50px;
@@ -769,7 +769,7 @@ h5 {
   flex-direction: column;
   
   height: 380px;
-width:100px !important; 
+width:300px !important; 
 }
 #contact_Mini .super_container .container_2 img{
   width: 100%;
@@ -885,7 +885,7 @@ width:100px !important;
   justify-content: center;
 }
 .homePage_footer {
-  padding: 200px 20px 50px 20px;
+  padding: 20px 20px 50px 20px;
 }
 .otherPage_footer .container:first-child {
   width: 1100px;
@@ -945,7 +945,7 @@ width:100px !important;
     padding: 30px 20px;
   }
   .homePage_footer {
-    padding: 600px 20px 20px 20px;
+    padding: 60px 20px 20px 20px;
   }
 }
 
@@ -1373,7 +1373,7 @@ width:100px !important;
   }
 
   .image-gallery img {
-    max-width: 45%;
+    max-width: 90%;
   }
 }
 
@@ -1527,38 +1527,285 @@ width:100px !important;
   }
 }
 
+/* حاوية المعرض */
+.gallery-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* تقليل المسافة لتوفير مساحة */
+  margin-top: 40px;
+  width: 100%; /* شغل العرض الكامل */
+}
+
+/* الصورة الرئيسية */
+.main-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 90%; /* تقليل العرض للآيفون */
+  margin: 0 auto;
+}
+
+.current-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  max-height: 300px; /* تقليل الارتفاع للآيفون */
+  transition: transform 0.3s ease;
+}
+
+/* حاوية الصور الجانبية باستخدام Grid */
+.thumbnails {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 صور في الصف على الشاشات الكبيرة */
+  gap: 10px; /* تقليل المسافة بين الصور */
+  width: 100%;
+  max-width: 100%; /* شغل العرض الكامل */
+  padding: 10px;
+  overflow-y: auto; /* تمكين التمرير العمودي إذا لزم الأمر */
+}
+
+/* تنسيق الصورة الجانبية */
+.thumbnail-container {
+  width: 100%;
+  height: 80px; /* تقليل الارتفاع للآيفون */
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: slideIn 0.5s ease-out forwards; /* أنيميشن جديد */
+  opacity: 0; /* تبدأ مخفية */
+}
+
+/* تنسيق الصورة داخل الحاوية */
+.thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* تأثير التحويم */
+.thumbnail-container:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.thumbnail:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+/* أنيميشن الظهور من الجانب */
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px); /* تبدأ من اليسار */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0); /* تنتهي في مكانها */
+  }
+}
+
+/* تأخير الأنيميشن لكل صورة */
+.thumbnail-container:nth-child(1) { animation-delay: 0.1s; }
+.thumbnail-container:nth-child(2) { animation-delay: 0.2s; }
+.thumbnail-container:nth-child(3) { animation-delay: 0.3s; }
+.thumbnail-container:nth-child(4) { animation-delay: 0.4s; }
+.thumbnail-container:nth-child(5) { animation-delay: 0.5s; }
+.thumbnail-container:nth-child(6) { animation-delay: 0.6s; }
+.thumbnail-container:nth-child(7) { animation-delay: 0.7s; }
+.thumbnail-container:nth-child(8) { animation-delay: 0.8s; }
+.thumbnail-container:nth-child(9) { animation-delay: 0.9s; }
+.thumbnail-container:nth-child(10) { animation-delay: 1s; }
+.thumbnail-container:nth-child(11) { animation-delay: 1.1s; }
+.thumbnail-container:nth-child(12) { animation-delay: 1.2s; }
+.thumbnail-container:nth-child(13) { animation-delay: 1.3s; }
+.thumbnail-container:nth-child(14) { animation-delay: 1.4s; }
+.thumbnail-container:nth-child(15) { animation-delay: 1.5s; }
+.thumbnail-container:nth-child(16) { animation-delay: 1.6s; }
+.thumbnail-container:nth-child(17) { animation-delay: 1.7s; }
+.thumbnail-container:nth-child(18) { animation-delay: 1.8s; }
+
 /* استجابة للأجهزة اللوحية */
 @media (min-width: 768px) and (max-width: 1024px) {
   .gallery-container {
     flex-direction: column;
     align-items: center;
   }
-
   .main-image {
     max-width: 80%;
-    max-height: 400px; /* تعديل ارتفاع الصورة الرئيسية */
+    max-height: 400px;
   }
-
   .thumbnails {
-    gap: 15px; /* تعديل المسافة بين الصور */
+    grid-template-columns: repeat(4, 1fr); /* 4 صور في الصف */
+    gap: 12px;
   }
-
   .thumbnail-container {
-    width: 90px;
     height: 90px;
   }
 }
-.thumbnails {
-  scroll-snap-type: x mandatory;
+
+/* استجابة للهواتف (مثل الآيفون) */
+@media (max-width: 767px) {
+  .gallery-container {
+    gap: 15px;
+  }
+  .main-image {
+    max-width: 95%;
+    max-height: 250px;
+  }
+  .thumbnails {
+    grid-template-columns: repeat(3, 1fr); /* 3 صور في الصف */
+    gap: 8px;
+  }
+  .thumbnail-container {
+    height: 70px;
+  }
 }
 
-.thumbnail-container {
-  scroll-snap-align: center;
+/* استجابة لشاشات الآيفون الصغيرة جدًا (مثل iPhone SE) */
+@media (max-width: 430px) {
+  .gallery-container {
+    gap: 10px;
+  }
+  .main-image {
+    max-width: 100%;
+    max-height: 200px;
+  }
+  .thumbnails {
+    grid-template-columns: repeat(2, 1fr); /* صورتان في الصف */
+    gap: 6px;
+    padding: 5px;
+  }
+  .thumbnail-container {
+    height: 60px; /* تقليل الارتفاع أكثر */
+  }
 }
-.thumbnails {
-  scroll-snap-type: x mandatory;
+/* تنسيق الحاوية الرئيسية */
+.villa-details {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-.thumbnail-container {
-  scroll-snap-align: center;
+/* تنسيق حاوية الصور */
+.images-container {
+  width: 100%;
+}
+
+/* تنسيق شبكة الصور */
+.grid-images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 أعمدة على الشاشات الكبيرة */
+  gap: 20px;
+  width: 100%;
+}
+
+/* تنسيق الصورة مع الوصف */
+.image-with-caption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.image-with-caption:hover {
+  transform: scale(1.03);
+}
+
+/* تنسيق الوصف تحت الصورة */
+.image-caption {
+  padding: 15px;
+  font-size: 16px;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.9);
+  border-top: 1px solid #eee;
+}
+
+/* تنسيق الصورة */
+.image-with-caption img {
+  width: 100%;
+  height: 200px; /* ارتفاع ثابت لتساوي الصور */
+  object-fit: cover;
+  cursor: pointer;
+}
+
+/* تنسيق الصف الثاني (صورتين) على الشاشات الكبيرة */
+@media (min-width: 768px) {
+  .grid-images > :nth-child(4) {
+    grid-column: 1 / 2; /* الصورة الرابعة في العمود الأول */
+  }
+  .grid-images > :nth-child(5) {
+    grid-column: 2 / 3; /* الصورة الخامسة في العمود الثاني */
+  }
+}
+
+/* تنسيق متجاوب للموبايل (شاشات صغيرة زي الآيفون) */
+@media (max-width: 767px) {
+  .grid-images {
+    grid-template-columns: 1fr; /* عمود واحد فقط على الموبايل */
+    gap: 15px; /* تقليل المسافة بين الصور */
+  }
+
+  .image-with-caption img {
+    height: 150px; /* تقليل ارتفاع الصور على الموبايل عشان ما تبقاش كبيرة زيادة */
+  }
+
+  .image-caption {
+    font-size: 14px; /* تقليل حجم الخط عشان يناسب الشاشة الصغيرة */
+    padding: 10px;
+  }
+
+  /* إلغاء تنسيق الصف الثاني لأن كل الصور هتبقى عمودية */
+  .grid-images > :nth-child(4),
+  .grid-images > :nth-child(5) {
+    grid-column: auto;
+  }
+}
+
+/* تنسيق المودال */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.modal-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
 }

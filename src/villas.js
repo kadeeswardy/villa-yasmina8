@@ -115,5 +115,84 @@ export const villas = [
     location: "EL GOUNA",
     image: "/villa-18.JPG"
   },
+  {
+    id: 19,
+    name: "Villa Yasmina",
+    location: "EL GOUNA",
+    image: "/public/1.jpg"
+  },
+  {
+    id: 20,
+    name: "Villa Yasmina",
+    location: "EL GOUNA",
+    image: "/public/2.jpg"
+  },
+  {
+    id: 21,
+    name: "Villa Yasmina",
+    location: "EL GOUNA",
+    image: "/public/3.jpg"
+  },
+  {
+    id: 22,
+    name: "Villa Yasmina",
+    location: "EL GOUNA",
+    image: "/public/4.jpg"
+  },
+  {
+    id: 23,
+    name: "Villa Yasmina",
+    location: "EL GOUNA",
+    image: "/public/5.jpg"
+  },
+  {
+    id: 24,
+    name: "Villa Yasmina",
+    location: "EL GOUNA",
+    image: "/public/6.jpg"
+  },
+  {
+    id: 25,
+    name: "Villa Yasmina",
+    location: "EL GOUNA",
+    image: "/public/7.jpg"
+  },
+  {
+    id: 26,
+    name: "Villa Yasmina",
+    location: "EL GOUNA",
+    image: "/public/8.jpg"
+  },
+
+  {
+    id: 26,
+    name: "Villa Yasmina",
+    location: "EL GOUNA",
+    image: "/public/9.jpg"
+  },
+  {
+    id: 26,
+    name: "Villa Yasmina",
+    location: "EL GOUNA",
+    image: "/public/10.jpg"
+  },
+  {
+    id: 26,
+    name: "Villa Yasmina",
+    location: "EL GOUNA",
+    image: "/public/11.jpg"
+  },
+  {
+    id: 26,
+    name: "Villa Yasmina",
+    location: "EL GOUNA",
+image: "/public/villa.jpg"
+  },
+  {
+    id: 26,
+    name: "Villa Yasmina",
+    location: "EL GOUNA",
+image: "/public/home.jpg"
+  },
 ];
 
