@@ -42,7 +42,7 @@ const SingleVilla = () => {
           </p>
         </div>
         <div className="image-with-caption">
-          <img src="/public/villa-13.JPG" alt="villa" onClick={() => openModal("/villa-13.JPG")} />
+          <img src="/villa-13.JPG" alt="villa" onClick={() => openModal("/villa-13.JPG")} />
           <p className="image-caption">
                     Master bedroom (Kingsize double bed)
           </p>
@@ -54,7 +54,7 @@ const SingleVilla = () => {
           </p>
         </div>
         <div className="image-with-caption">
-          <img src="/public/villa.jpg" alt="villa" onClick={() => openModal("/villa.jpg")} />
+          <img src="/villa.jpg" alt="villa" onClick={() => openModal("/villa.jpg")} />
           <p className="image-caption">
           2nd bedroom (single beds or double bed)
           </p>
