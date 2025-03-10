@@ -165,31 +165,31 @@ export const villas = [
   },
 
   {
-    id: 26,
+    id: 27,
     name: "Villa Yasmina",
     location: "EL GOUNA",
-    image: "/9.jpg"
+    image: "/9.JPG"
   },
   {
-    id: 26,
+    id: 28,
     name: "Villa Yasmina",
     location: "EL GOUNA",
     image: "/10.jpg"
   },
   {
-    id: 26,
+    id: 29,
     name: "Villa Yasmina",
     location: "EL GOUNA",
     image: "/11.jpg"
   },
   {
-    id: 26,
+    id: 30,
     name: "Villa Yasmina",
     location: "EL GOUNA",
 image: "/villa.jpg"
   },
   {
-    id: 26,
+    id: 31,
     name: "Villa Yasmina",
     location: "EL GOUNA",
 image: "/home.jpg"
