@@ -876,7 +876,57 @@ width:300px !important;
     flex: none;
   }
 }
+/* تحسين استجابة قسم contact لأجهزة iPhone */
+@media (max-width: 768px) {
+  #contact {
+    padding: 20px;
+    text-align: center;
+  }
 
+  #contact h1 {
+    font-size: 24px; /* تقليل حجم الخط للعناوين */
+    margin-bottom: 20px;
+  }
+
+  #contact .container {
+    display: flex;
+    flex-direction: column; /* ترتيب عمودي للمحتوى */
+    align-items: center; /* تمركز المحتوى */
+    gap: 20px; /* تقليل الفجوة بين العناصر */
+  }
+
+  #contact img {
+    width: 100%; /* استخدام العرض الكامل */
+    height: auto; /* الحفاظ على نسبة العرض إلى الارتفاع */
+    max-width: 300px; /* تحديد الحد الأقصى للعرض */
+    border-radius: 8px; /* إضافة حواف مستديرة */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* إضافة ظل للصورة */
+  }
+
+  #contact .content {
+    width: 100%; /* استخدام العرض الكامل */
+    max-width: 400px; /* تحديد الحد الأقصى للعرض */
+    text-align: center; /* محاذاة النص إلى المنتصف */
+  }
+
+  #contact .content h3 {
+    font-size: 20px; /* تقليل حجم الخط للعناوين */
+    margin-bottom: 15px;
+  }
+
+  #contact .content div {
+    margin-bottom: 10px;
+  }
+
+  #contact .content p {
+    font-size: 16px; /* تقليل حجم الخط للنصوص */
+    margin-bottom: 5px;
+  }
+
+  #contact .content span {
+    font-size: 14px; /* تقليل حجم الخط للنصوص */
+  }
+}
 /***********************************FOOTER STYLING**************************************************/
 .otherPage_footer {
   background: #11111190;
